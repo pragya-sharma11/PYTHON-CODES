@@ -1,0 +1,11 @@
+import itertools
+n=int(input())
+s=list(input().split())
+s.sort()
+m=int(input());c=0;k=[]
+t=list(itertools.combinations(s,m))
+
+for i in t:
+    if 'a' in i:
+        c=c+1
+print('%f'%(c/len(t)))
